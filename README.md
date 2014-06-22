@@ -7,6 +7,7 @@ How to Use
 =============
 The script (run_analysis.R) assumes that the dataset is available in the same folder as the script, inside a "UCI HAR Dataset" folder. The directory structure should be :
 
+``
 [D] Base Project Directory
 	[F] run_analysis.R					=> Data processing script, generator of the tidy data set
 	[D] UCI HAR Dataset					=> Folder containing the UCI HAR Dataset
@@ -21,7 +22,8 @@ The script (run_analysis.R) assumes that the dataset is available in the same fo
 			[F] X_train.txt				=> Train Data file (measures)
 			[F] y_train.txt				=> Train Data file (activities)
 			[F] subject_train.txt		=> Train Data file (subjects)
-			
+``
+		
 Running the contents of the run_analysis.R file 
 
 ``source("run_analysis.R")``
