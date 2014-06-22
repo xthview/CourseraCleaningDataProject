@@ -26,6 +26,8 @@ The script (run_analysis.R) assumes that the dataset is available in the same fo
 		
 Running the contents of the run_analysis.R file 
 
-```source("run_analysis.R")```
+```
+source("run_analysis.R")
+```
 
 will produce a tidy.data.txt output file. Read the CodeBook.md for more details on this process.
