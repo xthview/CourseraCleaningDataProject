@@ -1,10 +1,10 @@
 Introduction
-=============
+-------------
 In this repository you will find a script (run_analysis.R) that takes test and train from the "Human Activity Recognition Using Smartphones Data Set" and
 performs a set of transformation to generate a tidy data set that focus on the mean and std measurements.
 
 How to Use
-=============
+-------------
 The script (run_analysis.R) assumes that the dataset is available in the same folder as the script, inside a "UCI HAR Dataset" folder. The directory structure should be :
 
 ```
