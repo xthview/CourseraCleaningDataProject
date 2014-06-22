@@ -1,6 +1,3 @@
-rm(list = ls())
-setwd("D:/Users/311886/Dropbox/eBooks/Coursera/Cleaning/Project")
-
 # Read the Activity Labels Data Frame from CSV
 activity_labels <- read.table("UCI HAR Dataset\\activity_labels.txt", header = FALSE, sep=" ", col.names=c('activity_id', 'activity_name'))
 
@@ -44,3 +41,5 @@ tidyData$label <- NULL
 # Create the final Data Frame, agreggating existing data by Activity and Subject and averaging the value columns
 reallyTidyData <- aggregate(tidyData[,valCols], by=list(ActivityName = tidyData$activity_name, SubjectId = tidyData$subject_id), FUN="mean")
 
+# Write the final dataset to a txt file
+write.table(reallyTidyData, file = "tidy.data.txt", sep=",", row.names=F)
